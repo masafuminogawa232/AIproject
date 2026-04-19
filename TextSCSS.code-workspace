@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "C:\\xampp\\htdocs\\Copying\\Rizap" //記入例 C:\\Desktop\\作業フォルダ
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.formats":[
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
+				"savePath": "/css"				
+			},
+		],
+		"liveSassCompile.settings.excludeList": [ //対象外とするフォルダを指定
+			"**/lib/**",
+			"**.vscode/**"
+		],
+		"liveSassCompile.settings.autoprefix": [ //ベンダープレフィックスの指定
+			"last 2 versions",
+			"ie >= 11",
+			"Android >= 4",
+			"ios_saf >= 8"
+		],
+	}
+}
