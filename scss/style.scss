@@ -24,6 +24,7 @@ a {
 
 .logo img {
   display: block;
+  width: 201px;
   height: 100%;
 }
 
@@ -42,6 +43,7 @@ h1.logo {
     }
     a {
       font-weight: bold;
+      color: #334466;
     }
   }
 }
@@ -59,27 +61,27 @@ h1.logo {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: #00b881;
+  background-color: #338899;
   font-weight: bold;
   padding: 44px 50px;
   z-index: 1200;
   align-items: center;
   a {
-    color: #fff;
+    color: #334466;
     position: relative;
     padding-left: 20px;
   }
   a::before {
     content: "";
-    background: url(/img/icon-memo.svg);
+    background: url(/img/clipboad.png);
     display: block;
-    filter: invert(1);
-    width: 50px;
-    height: 60px;
+    // filter: invert(1);
+    width: 100px;
+    height: 120px;
     background-size: 50%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0px;
+    top: -5px;
     left: -20px;
   }
 }
@@ -214,7 +216,7 @@ body{
   margin-top: 27px;
   display: flex;
   img:first-child {
-    width: 60%;
+    width: 100%;
   }
   img:last-child {
     width: 40%;
@@ -223,7 +225,7 @@ body{
     height: 400px;
     max-width: 100%;
     object-fit: cover;
-    object-position: -80px;
+    object-position: -0px;
     display: block;
   }
 }
@@ -308,7 +310,7 @@ body {
     align-items: center;
     .item {
       display: flex;
-      width: 340px;
+      width: 400px;
       margin-left: 10px;
       border: solid 1px #ccc;
       border-radius: 5px;
@@ -321,7 +323,7 @@ body {
           font-size: 14px;
         }
         p:last-child {
-          font-size: 24px;
+          font-size: 18px;
           font-weight: 700;
         }
       }
@@ -329,13 +331,13 @@ body {
         margin-left: 20px;
         .p-text {
           p:first-child {
-            font-size: 14px;
+            font-size: 13px;
             color: #333;
           }
           p:last-child {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.06em;
             transform: scaleY(1.1);
           }
         }
@@ -345,7 +347,7 @@ body {
           cursor: pointer;
           position: relative;
           top: -15px;
-          right: -210px;
+          left: 270px;
           z-index: 900;
         }
         .arrow span {
@@ -381,13 +383,13 @@ body {
   transition: .6s ease;
 }
 
-.header.active {
-  display: none;
-}
+// .header.active {
+//   display: none;
+// }
 
-.box-hover ul li .ja::before {
-  // position: relative;
-}
+// .box-hover ul li .ja::before {
+//   position: relative;
+// }
 
 .circle-anim {
   position: absolute;

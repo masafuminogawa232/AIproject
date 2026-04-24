@@ -34,6 +34,7 @@ a {
 
 .logo img {
   display: block;
+  width: 201px;
   height: 100%;
 }
 
@@ -56,6 +57,7 @@ h1.logo {
 }
 .menu li a {
   font-weight: bold;
+  color: #334466;
 }
 
 .logo {
@@ -71,7 +73,7 @@ h1.logo {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: #00b881;
+  background-color: #338899;
   font-weight: bold;
   padding: 44px 50px;
   z-index: 1200;
@@ -81,22 +83,20 @@ h1.logo {
           align-items: center;
 }
 .fix-box a {
-  color: #fff;
+  color: #334466;
   position: relative;
   padding-left: 20px;
 }
 .fix-box a::before {
   content: "";
-  background: url(/img/icon-memo.svg);
+  background: url(/img/clipboad.png);
   display: block;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  width: 50px;
-  height: 60px;
+  width: 100px;
+  height: 120px;
   background-size: 50%;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0px;
+  top: -5px;
   left: -20px;
 }
 
@@ -244,7 +244,7 @@ body {
   display: flex;
 }
 .mainvisual img:first-child {
-  width: 60%;
+  width: 100%;
 }
 .mainvisual img:last-child {
   width: 40%;
@@ -254,8 +254,8 @@ body {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: -80px;
-     object-position: -80px;
+  -o-object-position: 0px;
+     object-position: 0px;
   display: block;
 }
 
@@ -354,7 +354,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 340px;
+  width: 400px;
   margin-left: 10px;
   border: solid 1px #ccc;
   border-radius: 5px;
@@ -372,20 +372,20 @@ body {
   font-size: 14px;
 }
 .feature .wrap .item .no p:last-child {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
 }
 .feature .wrap .item .info {
   margin-left: 20px;
 }
 .feature .wrap .item .info .p-text p:first-child {
-  font-size: 14px;
+  font-size: 13px;
   color: #333;
 }
 .feature .wrap .item .info .p-text p:last-child {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   -webkit-transform: scaleY(1.1);
           transform: scaleY(1.1);
 }
@@ -395,7 +395,7 @@ body {
   cursor: pointer;
   position: relative;
   top: -15px;
-  right: -210px;
+  left: 270px;
   z-index: 900;
 }
 .feature .wrap .item .info .arrow span {
@@ -429,10 +429,6 @@ body {
 .scroll-active {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-}
-
-.header.active {
-  display: none;
 }
 
 .circle-anim {
