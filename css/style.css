@@ -89,7 +89,7 @@ h1.logo {
 }
 .fix-box a::before {
   content: "";
-  background: url(/img/clipboad.png);
+  background: url(/img/Memo.png);
   display: block;
   width: 100px;
   height: 120px;
