@@ -128,7 +128,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 100px;
+  top: 115px;
 }
 .box-hover ul {
   display: -webkit-box;
