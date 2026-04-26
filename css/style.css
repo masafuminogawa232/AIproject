@@ -74,7 +74,7 @@ h1.logo {
   right: 0;
   top: 0;
   background-color: #338899;
-  font-weight: bold;
+  font-weight: 400;
   padding: 44px 50px;
   z-index: 1200;
   -webkit-box-align: center;
@@ -83,7 +83,7 @@ h1.logo {
           align-items: center;
 }
 .fix-box a {
-  color: #334466;
+  color: #fff;
   position: relative;
   padding-left: 20px;
 }
@@ -429,6 +429,10 @@ body {
 .scroll-active {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
+}
+
+.header.active {
+  display: none;
 }
 
 .circle-anim {

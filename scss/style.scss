@@ -62,12 +62,12 @@ h1.logo {
   right: 0;
   top: 0;
   background-color: #338899;
-  font-weight: bold;
+  font-weight: 400;
   padding: 44px 50px;
   z-index: 1200;
   align-items: center;
   a {
-    color: #334466;
+    color: #fff;
     position: relative;
     padding-left: 20px;
   }
@@ -383,9 +383,9 @@ body {
   transition: .6s ease;
 }
 
-// .header.active {
-//   display: none;
-// }
+.header.active {
+  display: none;
+}
 
 // .box-hover ul li .ja::before {
 //   position: relative;
