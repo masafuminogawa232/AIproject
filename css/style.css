@@ -207,6 +207,9 @@ body {
 
 .box-img img {
   width: 230px;
+  height: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .box-hover {
@@ -263,7 +266,7 @@ body {
   width: 38%;
   margin-top: -330px;
   margin-bottom: 400px;
-  margin-left: 55%;
+  margin-left: 60%;
   white-space: normal;
   word-break: break-all;
   overflow-wrap: break-word;
