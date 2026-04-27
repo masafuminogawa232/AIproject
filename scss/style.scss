@@ -644,7 +644,8 @@ body {
   }
   .top-text {
     margin-top: -500px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
   }
   .top-text p {
@@ -705,4 +706,18 @@ body {
   .hamburger span:nth-child(3) {
     top: 20px;
   }
+  .mainvisual {
+     flex-direction: column;
+    img:first-child {
+      width: 100%;
+      object-position: center center;
+      }
+    img:last-child {
+      display: none;
+    }
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+
 }

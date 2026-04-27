@@ -723,7 +723,8 @@ body {
   }
   .top-text {
     margin-top: -500px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
   }
   .top-text p {
@@ -784,5 +785,23 @@ body {
   }
   .hamburger span:nth-child(3) {
     top: 20px;
+  }
+  .mainvisual {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainvisual img:first-child {
+    width: 100%;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .mainvisual img:last-child {
+    display: none;
+  }
+  html, body {
+    overflow-x: hidden;
   }
 }
