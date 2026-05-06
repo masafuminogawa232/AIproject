@@ -608,7 +608,7 @@ mainvisual
 ------------------------------*/
   .mainvisual h1 {
     position: static;
-    font-size: 18px;
+    font-size: 32px;
     width: 90%;
     margin: 20px auto 20px;
   }
@@ -616,14 +616,14 @@ mainvisual
   .mainvisual p:nth-of-type(1) {
     position: static;
     width: 90%;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto 20px;
   }
 
   .mainvisual p:nth-of-type(2) {
     position: static;
     width: 90%;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto;
   }
 
@@ -765,6 +765,21 @@ header-top
   .header-bottom .text-area {
     padding: 20px 0 20px 20px;
   }
+
+/*------------------------------
+mainvisual
+-------------------------------*/
+.mainvisual h1 {
+  font-size: 28px;
+}
+
+.mainvisual p:nth-of-type(1) {
+  font-size: 18px;
+}
+
+.mainvisual p:nth-of-type(2) {
+  font-size: 18px;
+}
   
 /*------------------------------
 feature

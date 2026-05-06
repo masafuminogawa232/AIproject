@@ -55,6 +55,7 @@ $(function() {
             $(".ebox").hide();
           }
         }
+        checkDevice();
       }else {
         $(".header").removeClass('active');
         $(".ebox").show();
