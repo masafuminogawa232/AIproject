@@ -46,9 +46,15 @@ $(function() {
 
       // ★ 画面に入ったら active を付ける
       if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 200) {
-        $(".header").addClass('active');
-        $(".box-hover").hide();
-        $(".ebox").hide();
+        function checkDevice() {
+        const w = $(window).width();
+
+          if (w >= 767) {
+            $(".header").addClass('active');
+            $(".box-hover").hide();
+            $(".ebox").hide();
+          }
+        }
       }else {
         $(".header").removeClass('active');
         $(".ebox").show();

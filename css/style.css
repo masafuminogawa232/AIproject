@@ -688,6 +688,10 @@ span.dbox {
   left: 275px;
 }
 
+.ctext {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   /*------------------------------
   mainvisual
@@ -875,7 +879,7 @@ span.dbox {
             transform: rotate(45deg);
     top: 50%;
     left: 2px;
-    z-index: 2000;
+    z-index: 1009;
   }
   .feature .feature-item .arrow span:nth-of-type(2) {
     position: absolute;
@@ -886,7 +890,7 @@ span.dbox {
             transform: rotate(-45deg);
     top: 50%;
     left: 12px;
-    z-index: 2000;
+    z-index: 1009;
   }
   #plan .program .item img {
     width: 100px;
@@ -1058,7 +1062,7 @@ span.dbox {
     width: 140px;
   }
   .ctext {
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
   }
   .flex-text.bbox img {
     left: 77%;
@@ -1085,5 +1089,11 @@ span.dbox {
   }
   .header-top .navi-area .navi li {
     margin-top: 0;
+  }
+  .ebox {
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 0;
   }
 }
