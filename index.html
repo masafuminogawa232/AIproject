@@ -1,177 +1,154 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy"
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="Content-Security-Policy"
   content="
-    default-src 'self';
-    script-src 'self' https://*.github.io;
-    img-src 'self' https://*.github.io data:;
-    font-src 'self';
-    connect-src 'self';
-    base-uri 'self';
-    form-action 'self';
-    object-src 'none';
-    upgrade-insecure-requests;
+  default-src 'self';
+  script-src 'self' https://*.github.io;
+  img-src 'self' https://*.github.io data:;
+  font-src 'self';
+  connect-src 'self';
+  base-uri 'self';
+  form-action 'self';
+  object-src 'none';
+  upgrade-insecure-requests;
   ">
 
     <!-- https://www.rizap.jp/program#program-point-01 -->
-    <title>Copying AI</title>
-    <meta
-      name="description"
-      content="ライザップの模写コーディングです。練習用で作りました。"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet"
-      href="./css/ress.min.css"
-      integrity="sha256-2VVrPA9XHUuZJ1nI++RZBzkluILSPPau5TtH8TvSf40="
-      crossorigin="anonymous">
 
 
-    <link rel="stylesheet"
-      href="./css/style.css?v=3.15">
 
-    <script src="./js/jquery.js"></script>
+  <title>aiProject</title>
+  <meta name="description" content="ライザップの模写コーディングです。練習用で作りました。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/ress.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+</head>
 
-
-    <script src="./js/main.js"></script>
-  </head>
 <body>
-  
-  <div class="header-out">
-    <div id="header-area">
-      <header class="header">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="./img/AIlogo.png" alt="">
-          </a>
-        </h1>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav class="navi">
-          <ul class="menu">
-            <li class="open"><a href="index.html">AIを詳しく知る</a></li>
-            <li><a href="concept.html">料金を見る</a></li>
-            <li><a href="#menu">プログラム</a></li>
-            <li><a href="blog.html">店舗案内</a></li>
-          </ul>
-        </nav>
-      </header>
-        <div class="fix-box">
-          <a href="">無料相談を受ける</a>
-        </div>
+  <div class="container">
+    <header id="header">
+      <div class="header">
 
-      <div class="box-hover wrapper">
-
-        <div class="box-img">
+        <div class="header-top">
+          <div class="logo">
+            <div class="space-box"></div>
+            <a href="./index.html">
+              <img src="./img/aiLogo.png" alt="ailogo">
+            </a>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="navi-area">
+            <nav>
+              <ul class="navi">
+                <li><a class="open" href="index.html">AIを詳しく知る</a></li>
+                <li><a href="#">料金を見る</a></li>
+                <li><a href="#">プログラム</a></li>
+                <li><a class="serch" href="#">店舗案内</a></li>
+                <li class="contract">契約をお考えの方へ</li>
+                <li class="question">よくある質問</li>
+                <li><a class="navi-contact" href="#">無料相談を受ける</a></li>
+                <li class="navi-box"></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="box-hover header-middle">
           <img src="./img/training.png" alt="">
-        </div>
-
-        <ul class="ul">
-          <div class="box-outer">
-            <a href="index.html">
-              <li class="box-inner">
-                <span class="en">Brand Mission<br></span>
-                <span class="ja">ブランドミッション</span>
-              </li>
-            </a>
-            <a href="index.html">
-              <li class="box-inner">
-                <span class="en">PREMIUM CONTENT<br></span>
-                <span class="ja">プレミアムコンテンツ</span>
-              </li>
-            </a>
-          </div>
-          <div class="box-outer">
-            <a href="index.html">
-              <li class="box-inner">
-                <span class="en">ESSENCE<br></span>
-                <span class="ja">AIの特徴</span>
-              </li>
-            </a>
-            <a href="index.html">
-              <li class="box-inner">
-                <span class="en">Social Link<br></span>
-                <span class="ja">公式SNL</span>
-              </li>
-            </a>
-          </div>
-        </ul>
-      </div>  
-    </div>
-  </div>
-    
-  <main>
-    <div class="modal">
-      <div class="top">
-        <p class="en">Program</p>
-        <p class="ja">プログラム</p>
-      </div>
-
-      <div class="visual">
-        <div class="mainvisual">
-           <img src="./img/main.png" alt="">
-           <img src="./img/background3.png" alt="">
-        </div>
-
-        <div class="top-text">
-          <h1>科学的根拠に基づく、<br>結果につながるプログラム</h1>
-          <p>AIは、あなたの体質や生活スタイルをもとに、専門家監修の科学的メソッドから最適なアプローチを選び出します。難しい知識は必要ありません。あなたは提案されたプランに沿って進めるだけで、健康的な変化を実感できるように設計されています。
-            「自分に合った方法が知りたい」「効率よく結果を出したい」そんなあなたのために、AIが最短ルートを提示します。</p>
-          <p>※2026年4月現在</p>
+          <ul class="box-outer">
+            <li class="box-inner">
+              <span class="en">Brand Mission<br></span>
+              <span class="ja">ブランドミッション</span>
+            </li>
+            <li class="box-inner">
+              <span class="en">PREMIUM CONTENT<br></span>
+              <span class="ja">プレミアムコンテンツ</span>
+            </li>
+            <li class="box-inner">
+              <span class="en">ESSENCE<br></span>
+              <span class="ja">AIの特徴</span>
+            </li>
+            <li class="box-inner">
+              <span class="en">Social Link<br></span>
+              <span class="ja">公式SNL</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+      <div class="ebox"></div>
+      <div class="header-bottom">
+        <div class="text-area">
+          <p class="en">Program</p>
+          <h1 class="ja">プログラム</h1>
+        </div>
+      </div>
+    </header>
 
-    <div class="feature scroll-active">
-      <h2>AIプログラムの特徴</h2>
-      <div class="wrap">
-        <div class="item feature-1">
-          <div class="no">
-            <p>Point</p>
-            <p>01</p>
-          </div>
-          <div class="info">
-            <div class="p-text">
+    <main>
+      
+      <div class="modal mainvisual" >
+        <picture>
+          <source srcset="./img/main.png" media="(max-width: 1000px)">
+          <img src="./img/mainvisual.png" alt="">
+        </picture>
+        <h1>科学的根拠に基づく、<br class="tb">結果につながるプログラム</h1>
+        <p>AIは、あなたの体質や生活スタイルをもとに、専門家監修の科学的メソッドから最適なアプローチを選び出します。難しい知識は必要ありません。あなたは提案されたプランに沿って進めるだけで、健康的な変化を実感できるように設計されています。 「自分に合った方法が知りたい」「効率よく結果を出したい」そんなあなたのために、AIが最短ルートを提示します。</p>
+        <p>※2026年4月現在</p>
+      </div>
+
+      <div class="feature scroll-active">
+        <h1>AIプログラムの特徴</h1>
+        <div class="feature-box">
+          <div class="feature-item">
+            <div class="tag">
+              <p class="point">Point</p>
+              <p class="no">01</p>
+            </div>
+            <div class="feature-text">
               <p>短時間で理想を叶える</p>
               <p>あなた専用プラン</p>
             </div>
+            <div class="cbox"></div>
             <div class="arrow">
               <span></span>
               <span></span>
             </div>
           </div>
-        </div>
-        <div class="item feature-2">
-          <div class="no">
-            <p>Point</p>
-            <p>02</p>
-          </div>
-          <div class="info">
-            <div class="p-text">
-              <p>やせて、続けるをサポート</p>
-              <p>続ける力を全力支援</p>
+          <div class="feature-item">
+            <div class="tag">
+              <p class="point">Point</p>
+              <p class="no">02</p>
             </div>
-            <div class="arrow">  
+            <div class="feature-text">
+              <p>やせて続けるをサポート</p>
+              <p>継続力を全力支援</p>
+            </div>
+            <div class="cbox"></div>
+            <div class="arrow">
               <span></span>
               <span></span>
             </div>
           </div>
-        </div>
-        <div class="item feature-3">
-          <div class="no">
-            <p>Point</p>
-            <p>03</p>
-          </div>
-          <div class="info">
-            <div class="p-text">
+          <div class="feature-item">
+            <div class="tag">
+              <p class="point">Point</p>
+              <p class="no">03</p>
+            </div>
+            <div class="feature-text">
               <p>安心しながら続けられる</p>
-              <p>安心の支援サポート</p>
+              <p>充実支援サポート</p>
             </div>
+            <div class="cbox"></div>
             <div class="arrow">
               <span></span>
               <span></span>
@@ -179,87 +156,107 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <section class="main">
-      <div class="main-text">
-        <div class="header3">
-          <p>Point</p>
-          <h3>01</h3>
-        </div>
-        <p>短時間で理想を叶えるあなた専用プラン</p>
-        <p>あなたの生活に寄り添って作る“オーダーメイド”プランだから、<br>理想のカラダへ短期間で自然と近づけます。</p>
-      </div>
-      <div class="program">
-        <div class="prog-1 prog">
-          <img src="./img/Body.png" alt="">
-          <p class="prog-1-text">体型改善</p>
-        </div>
-        <div class="prog-2 prog">
-          <img src="./img/Body2.png" alt="">
-          <p class="prog-1-text">体の数値改善</p>
-        </div>
-        <div class="prog-3 prog">
-          <img src="./img/Shoes.png" alt="">
-          <p class="prog-1-text">動ける体づくり</p>
-        </div>
-      </div>
-
-      <div class="traning wrapper">
-        <div class="detail">
-          <div class="detail-text">
-            <h4>科学的根拠に基づいた<br>効率爆上げトレーニング</h4>
-            <ul>
-              <li><span>✔</span><span><span class="span"></span>狙った筋肉</span>に最適な負荷でアプローチ</li>
-              <li><span>✔</span><span class="span"></span>代謝を落とさず、自然に<span>痩せやすい身体へ</span></li>
-              <li><span>✔</span><span class="span"></span>続けられる“あなた向け”の<span>運動習慣</span>が身につく</li>
-              <li><span>✔</span><span class="span"></span>時間がない日も<span>オンライン</span>で受講可能</li>
-            </ul>
+      <div id="plan" class="wrapper">
+        <div class="text">
+          <div class="label">
+            <p>Point</p>
+            <h2>01</h2>
           </div>
-          <div class="detail-img">
-            <img src="./img/traininggym.png" alt="">
+          <div class="main-text">
+            <h1>短時間で理想を叶える<br class="pc">あなた専用プラン</h1>
+            <p>あなたの生活に寄り添って作る<br class="pc">“オーダーメイド”プランだから、<br class="pc">理想のカラダへ短期間で自然と近づけます。</p>
           </div>
         </div>
-      
-        <div class="box">
-          <p class="keep">オフの日もAIで理想をキープできる</p>
-            <div class="inner">
-              <div class="flex-text">
-                <p>AIの空間と機材を<br>独占利用</p>
-                <img src="./img/inner1.png" alt="">
-                <span>※要予約</span>
-              </div>
-              <div class="flex-text">
-                <p>話題のコンビニジム<br>「AI」が通い放題</p>
-                <img src="./img/inner2.png" alt="">
-              </div>
-              <div class="flex-text">
-                <p>自主練メニューも<br>丁寧に提案</p>
-                <img src="./img/inner3.png" alt="">
-              </div>
-            </div>
+        <div class="program">
+          <div class="item">
+            <img src="./img/Body.png" alt="肉体">
+            <p>体型改善</p>
+          </div>
+          <div class="item">
+            <img src="./img/Body2.png" alt="体の数値">
+            <p>体の数値改善</p>
+          </div>
+          <div class="item">
+            <img src="./img/Shoes.png" alt="足">
+            <p>動ける体作り</p>
+          </div>
         </div>
+      </div>
+
+      <div id="keep"> 
+        <div class="traning">
 
           <div class="detail">
+            <div class="detail-text">
+              <h3>科学的根拠に基づいた<br>効率爆上げトレーニング</h3>
+              <ul>
+                <li><span>✔</span><span class="span"></span><span>狙った筋肉</span>に最適な負荷でアプローチ</li>
+                <li><span>✔</span><span class="span"></span>代謝を落とさず、自然に<span>痩せやすい身体へ</span></li>
+                <li><span>✔</span><span class="span"></span>続けられる“あなた向け”の<span>運動習慣</span></li>
+                <li><span>✔</span><span class="span"></span>時間がない日も<span>オンライン</span>で受講可能</li>
+              </ul>
+            </div>
+            <div class="detail-img">
+              <img src="./img/traininggym.png" alt="">
+            </div>
+          </div>
+        
+          <div class="box">
+            <h3>オフの日もAIで<br class="pc">理想をキープできる</h3>
+              <div class="inner">
+                <div class="flex-text bbox">
+                  <div></div>
+                  <div class="abox">
+                    <span class="banish">B</span>
+                    <p>AIの空間と機材を<br class="tb">独占利用<span class="ctext">空字</span></p>
+                    <span class="dbox">※要予約</span>
+                  </div>
+                  <div></div>
+                  <img src="./img/inner1.png" alt="">
+                </div>
+                <div class="flex-text dbox">
+                  <div></div>
+                  <div class="abox">
+                    <span class="banish">B</span>
+                    <p>コンビニジム<br class="tb">「AI」が通い放題</p>
+                    <span class="banish">※要予約</span>
+                  </div>
+                  <div></div>
+                  <img src="./img/inner2.png" alt="">
+                </div>
+                <div class="flex-text bbox">
+                  <div></div>
+                  <div class="abox">
+                    <span class="banish">B</span>
+                    <p>自主練メニューも<br class="tb">丁寧に提案</p>
+                    <span class="banish">※要予約</span>
+                  </div>
+                  <div></div>
+                  <img src="./img/inner3.png" alt="">
+                </div>
+              </div>
+          </div>
+
+          <div class="detail-2 detail">
             <div class="detail-img">
               <img class="img" src="./img/steak.png" alt="">
             </div>
             <div class="detail-text">
-              <h4>食事で変わるあなたの<br>痩せるルーティン</h4>
+              <h3>食事で変わるあなたの<br>痩せるルーティン</h3>
               <ul>
-                <li><span>✔</span><span><span class="span"></span>カラダを変える、</span>食べ方の新ルールが身につく</li>
+                <li><span>✔</span><span class="span"></span><span>カラダを変える、</span>食べ方の新ルール</li>
                 <li><span>✔</span><span class="span"></span>何を食べれば良いか<span>迷わなくなる</span></li>
                 <li><span>✔</span><span class="span"></span>外食も間食も上手に<span>選べる習慣</span></li>
               </ul>
             </div>
           </div>
+        </div>
       </div>
-    
-    </section>
-    
-    
-  </main>
 
+    </main>
 
+  </div>
 </body>
+
 </html>

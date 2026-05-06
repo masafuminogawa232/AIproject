@@ -1,14 +1,15 @@
-let flag=0;
 $(function() {
   $(".hamburger").click(function() {
     $(this).toggleClass("active");
-    $(".header .navi").toggleClass("active");
+    $("#header .navi-area").toggleClass("active");
   });
 
-  $(".navi a").click(function() {
+  $( ".navi a").click(function() {
     $(".hamburger").removeClass("active");
-    $(".header .navi").removeClass("active");
+    $("#header .navi-area").removeClass("active");
   });
+
+
 
   $(".open").mouseenter(function() {
     $(".box-hover").show();
@@ -16,7 +17,7 @@ $(function() {
     $(".modal").addClass("active");
   });
 
-  $("#header-area").mouseleave(function() {
+  $(".header").mouseleave(function() {
 
     // ★ どれかに hover していたら閉じない
     if (
@@ -44,11 +45,13 @@ $(function() {
       let windowHeight = $(window).height();   // 画面の高さ
 
       // ★ 画面に入ったら active を付ける
-      if (!$(this).hasClass('active') && scroll > elemTop - windowHeight - 10) {
+      if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 200) {
         $(".header").addClass('active');
         $(".box-hover").hide();
+        $(".ebox").hide();
       }else {
         $(".header").removeClass('active');
+        $(".ebox").show();
       }
 
     });
@@ -100,8 +103,6 @@ $(function() {
       );
     }
   );
-
-
 
 
 
