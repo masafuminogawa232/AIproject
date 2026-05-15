@@ -49,7 +49,7 @@ $(function() {
         function checkDevice() {
         const w = $(window).width();
 
-          if (w >= 767) {
+          if (w >= 1000) {
             $(".header").addClass('active');
             $(".box-hover").hide();
             $(".ebox").hide();
@@ -111,6 +111,11 @@ $(function() {
     }
   );
 
+  $('a[href^="#"]').click(function(e) {
+    e.preventDefault();
+    const target = $($(this).attr('href')).offset().top;
+    $('html, body').animate({ scrollTop: target }, 400); // ← 800msでゆっくり
+  });
 
 
 
