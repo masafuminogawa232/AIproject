@@ -117,7 +117,13 @@ $(function() {
     $('html, body').animate({ scrollTop: target }, 400); // ← 800msでゆっくり
   });
 
-
+  $(function () {
+    $(".info dd").hide();
+    $(".info dt").click(function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("active")
+    });
+  });
 
 
 
