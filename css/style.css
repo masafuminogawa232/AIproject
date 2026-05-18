@@ -1234,7 +1234,10 @@ span.dbox {
 
 .question-2 h2 {
   text-align: center;
-  margin: 50px auto 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-box {
@@ -1248,6 +1251,12 @@ span.dbox {
           align-items: center;
 }
 
+.info dt:hover {
+  background-color: #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .info dt {
   width: 80%;
   margin: 0 auto 0;
@@ -1256,6 +1265,8 @@ span.dbox {
   cursor: pointer;
   font-weight: bold;
   position: relative;
+  line-break: strict;
+  word-break: keep-all;
 }
 
 .info dt::before {
@@ -1296,6 +1307,10 @@ span.dbox {
   background-color: #fff;
   cursor: pointer;
   font-weight: bold;
+}
+
+.watch-btn {
+  background-color: #f2f2ff;
 }
 
 .watch-btn a {
@@ -1977,6 +1992,9 @@ span.dbox {
     background-color: #ccc;
   }
   .question-2 h2 {
-    background-color: #fff;
+    background-color: #f2f2ff;
+  }
+  .info {
+    background-color: #f2f2ff;
   }
 }
