@@ -1,12 +1,12 @@
 $(function() {
   $(".hamburger").click(function() {
     $(this).toggleClass("active");
-    $("#header .navi-area").toggleClass("active");
+    $(".navi-area").toggleClass("active");
   });
 
   $( ".navi a").click(function() {
     $(".hamburger").removeClass("active");
-    $("#header .navi-area").removeClass("active");
+    $(".navi-area").removeClass("active");
   });
 
 
@@ -65,22 +65,28 @@ $(function() {
 
   });
 
+  
 
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   $(".box-hover ul li").hover(
     function() {
       // hover in → 円を生成
       let circle = `
-        <svg class="circle-anim" width="30" height="30">
-          <circle cx="15" cy="15" r="14" fill="none" stroke="#ccc" stroke-width="1" />
+      <svg class="circle-anim" width="30" height="30">
+      <circle cx="15" cy="15" r="14" fill="none" stroke="#ccc" stroke-width="1" />
           <circle class="draw" cx="15" cy="15" r="14" fill="none" stroke="#000" stroke-width="2"
-            stroke-dasharray="88" stroke-dashoffset="88" />
+          stroke-dasharray="88" stroke-dashoffset="88" />
         </svg>
-      `;
+        `;
 
       $(this).find(".ja").append(circle);
 
@@ -93,7 +99,7 @@ $(function() {
         }
       );
     },
-
+    
     function() {
       // hover out → 逆回転で消す
       let draw = $(this).find(".draw");
@@ -124,6 +130,15 @@ $(function() {
       $(this).toggleClass("active")
     });
   });
+
+
+  
+  
+
+
+
+
+
 
 
 
