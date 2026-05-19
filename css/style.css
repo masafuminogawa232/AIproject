@@ -1337,6 +1337,135 @@ span.dbox {
   display: none;
 }
 
+.enrollment img {
+  width: 100%;
+  z-index: 0;
+}
+
+.enrollment-text {
+  margin: 0px 0 0 70%;
+  position: relative;
+}
+
+.enrollment-text .en {
+  font-size: 18px;
+  position: absolute;
+  top: -230px;
+  left: -50px;
+  z-index: 500;
+  color: #000;
+  letter-spacing: 0.1em;
+}
+
+.enrollment-text .ja {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: -200px;
+  left: -50px;
+  z-index: 500;
+  color: #000;
+  letter-spacing: 0.1em;
+}
+
+.enrollment-text .ja::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  border-radius: 50%;
+  position: absolute;
+  top: -14.5px;
+  left: 215px;
+}
+
+.enrollment-text .ja::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 10px;
+  right: -63px;
+  left: auto;
+}
+
+.enrollment-text .ja svg {
+  top: -20px;
+  left: 210px;
+}
+
+.enrollment-text .en::before {
+  content: "";
+  width: 4px;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #000;
+  position: absolute;
+  top: 39px;
+  right: -138px;
+  left: auto;
+}
+
+.enrollment-text .en::after {
+  content: "";
+  width: 4px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #000;
+  position: absolute;
+  top: 41px;
+  right: -137px;
+  left: auto;
+}
+
+.enrollment {
+  overflow: hidden;
+}
+
+.enrollment img {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.enrollment:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
+/* enrollment-text の位置はそのまま使う */
+.circle-anim {
+  position: absolute;
+  z-index: 900;
+  top: -220px; /* ← あなたの円の位置に合わせて調整済み */
+  right: 156px; /* ← ja::after の円と同じ位置 */
+  pointer-events: none;
+}
+
+.circle-anim circle {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-linecap: round;
+  /* 円周アニメーションの基本 */
+  stroke-dasharray: 176; /* 2πr ≒ 2 * 3.14 * 28 */
+  stroke-dashoffset: 176; /* 最初は非表示 */
+  -webkit-transition: stroke-dashoffset 0.8s linear;
+  transition: stroke-dashoffset 0.8s linear;
+}
+
+/* ホバー時：時計回りに円が現れる */
+.enrollment.hover-on + .enrollment-text .circle-anim circle {
+  stroke-dashoffset: 0;
+}
+
+/* ホバー解除：逆回転で消える（CSSの逆再生でOK） */
 @media screen and (max-width: 1000px) {
   /*------------------------------
   mainvisual
@@ -1523,6 +1652,9 @@ span.dbox {
   }
   .detail-3 .span-2::after {
     left: 156px;
+  }
+  .circle-anim {
+    right: 46px;
   }
 }
 @media screen and (max-width: 767px) {

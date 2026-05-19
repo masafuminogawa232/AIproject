@@ -133,7 +133,16 @@ $(function() {
 
 
   
-  
+  $(".enrollment").hover(
+    function() {
+      $(this).addClass("hover-on");
+    },
+    function() {
+      $(this).removeClass("hover-on");
+    }
+  );
+
+
 
 
 
