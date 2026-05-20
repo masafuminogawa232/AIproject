@@ -77,6 +77,7 @@ $(function() {
   
   
   
+  // $(".circle-anim-2").hover(
   $(".box-hover ul li").hover(
     function() {
       // hover in → 円を生成
@@ -141,6 +142,13 @@ $(function() {
       $(this).removeClass("hover-on");
     }
   );
+
+
+
+
+
+
+
 
 
 
