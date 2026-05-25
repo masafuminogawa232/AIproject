@@ -1,0 +1,68 @@
+[33mb46d910[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33meb2290a[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33meb2290a[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: footer all add
+[33mb46d910[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{3}: commit: footer wide add
+[33md377985[m HEAD@{4}: commit: enrollment smartphone add
+[33m8bdd4ab[m HEAD@{5}: commit: enrollment pc add
+[33m57ee399[m HEAD@{6}: commit: info color edit
+[33m2488f48[m HEAD@{7}: commit: hamburger-menu change
+[33mfaa777d[m HEAD@{8}: commit: question add
+[33m04deea3[m HEAD@{9}: commit: point-3 staff add
+[33mc68c424[m HEAD@{10}: commit: point-2 add
+[33mfca010a[m HEAD@{11}: commit: font-size change
+[33m0c60391[m HEAD@{12}: commit: 804 and 815 row(scss) z-index:2000 to 1009 change
+[33m439f081[m HEAD@{13}: commit: 911row(scss) background-color:rgba(255,255,255,0) add
+[33m66f7998[m HEAD@{14}: commit: 910row(scss) top:22px add
+[33m2a85a18[m HEAD@{15}: commit: next test
+[33ma3c9fc9[m HEAD@{16}: commit: force rebuild
+[33mbbb856e[m HEAD@{17}: commit: Fix image path lowercase
+[33ma508562[m HEAD@{18}: commit: rename shoes to lowercase
+[33mb9f363f[m HEAD@{19}: commit: temp rename shoes
+[33m6ffe6be[m HEAD@{20}: commit: rename memo to lowercase
+[33m5c11c22[m HEAD@{21}: commit: temp rename memo
+[33md68a6ed[m HEAD@{22}: commit: rename body2 to lowercase
+[33m13eaf90[m HEAD@{23}: commit: temp rename body
+[33mfe4752b[m HEAD@{24}: commit: rename body to lowercase
+[33mdda1c81[m HEAD@{25}: commit: temp rename body
+[33me0b1be6[m HEAD@{26}: commit: rename logo to lowercase
+[33me2d6cd0[m HEAD@{27}: commit: temp rename logo
+[33ma6f394b[m HEAD@{28}: commit: rename to lowercase
+[33m0c25b7a[m HEAD@{29}: commit: temp rename
+[33m19edfac[m HEAD@{30}: commit: change img-name
+[33mf56ad98[m HEAD@{31}: commit: Update Mainvisual.png
+[33m54e8525[m HEAD@{32}: commit: force rebuild
+[33m82cb032[m HEAD@{33}: commit: 大幅な変更
+[33mb890c2d[m HEAD@{34}: commit: .main-visual img margin-bottom: 40px change
+[33m978adbc[m HEAD@{35}: commit: .main-visual img margin-bottom: 20px add
+[33mdc34897[m HEAD@{36}: commit: .top-text p padding-top 400 → 410 change
+[33mb99ec6c[m HEAD@{37}: commit: .top-text margin change
+[33m50a2367[m HEAD@{38}: commit: edit css
+[33m86a592c[m HEAD@{39}: commit: edit jquery
+[33m22b4ba3[m HEAD@{40}: commit: script-src change
+[33m80b4741[m HEAD@{41}: commit: ver 3.1→3.11
+[33ma41c4fc[m HEAD@{42}: commit: .program back-color change
+[33m596cf87[m HEAD@{43}: commit: ver 3 → 3.1
+[33m96d8ed1[m HEAD@{44}: commit: .program .prog p background-color change
+[33mec38870[m HEAD@{45}: commit: .program .prog img margin-top and background-color change.
+[33m94b903e[m HEAD@{46}: commit: version 3
+[33m792acc2[m HEAD@{47}: commit: css body change
+[33mfe0251d[m HEAD@{48}: commit: AILogo → AIlogo
+[33m6182fca[m HEAD@{49}: commit: img-src change2
+[33m93344d2[m HEAD@{50}: commit: img-src change
+[33m40de152[m HEAD@{51}: commit: imgLogo change
+[33m82f1cc1[m HEAD@{52}: commit: workspace change
+[33m278f8df[m HEAD@{53}: commit: ドットの追加
+[33m3737d6c[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{54}: Branch: renamed refs/heads/master to refs/heads/main
+[33m3737d6c[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{56}: commit: traning detail add
+[33mfb8ebe3[m HEAD@{57}: commit: img delete
+[33mb92b37a[m HEAD@{58}: commit: +.box and detail
+[33m542e38c[m HEAD@{59}: commit: point01 section edit
+[33mcc7f95c[m HEAD@{60}: commit: program-icon change
+[33m27b13cf[m HEAD@{61}: commit: box-img change
+[33mb59a65b[m HEAD@{62}: commit: border-radius and left:273 → 275px
+[33m14c29fb[m HEAD@{63}: commit: text change.
+[33m1bd1d59[m HEAD@{64}: commit: Memo and Main Image change.
+[33me8862f5[m HEAD@{65}: commit: .box-hover {top: 100px → 115px}
+[33m433a238[m HEAD@{66}: commit: header-navi and header-box change
+[33me57671e[m HEAD@{67}: commit: faviconとロゴの更新
+[33m8ab6425[m HEAD@{68}: commit (initial): initial commit
