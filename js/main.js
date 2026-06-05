@@ -1,17 +1,31 @@
-$(function() {
-  $(".hamburger").click(function() {
+$(function () {
+
+  // ハンバーガー開閉
+  $(".hamburger").on("click", function () {
     $(this).toggleClass("active");
     $(".navi-area").toggleClass("active");
   });
 
-  $( ".navi a").click(function() {
+  // トップ階層のリンクを押したら閉じる
+  $(".navi > dt > a").on("click", function () {
     $(".hamburger").removeClass("active");
     $(".navi-area").removeClass("active");
   });
 
+  // アコーディオン（dt.menu のみ）
+  $(".navi dt.menu").on("click", function (e) {
+
+    // a をクリックした場合は遷移させる
+    if ($(e.target).is("a")) return;
+
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(this).nextUntil("dt").slideToggle();
+  });
 
 
-  $(".open").mouseenter(function() {
+  
+ $(".open").mouseenter(function() {
     $(".box-hover").show();
     // $("body").css("overflow-y","hidden");
     $(".modal").addClass("active");
@@ -65,17 +79,7 @@ $(function() {
 
   });
 
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
   
   // $(".circle-anim-2").hover(
   $(".box-hover ul li").hover(
@@ -142,21 +146,6 @@ $(function() {
       $(this).removeClass("hover-on");
     }
   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

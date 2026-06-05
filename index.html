@@ -4,24 +4,12 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta http-equiv="Content-Security-Policy"
-  content="
-  default-src 'self';
-  script-src 'self' https://*.github.io;
-  img-src 'self' https://*.github.io data:;
-  font-src 'self';
-  connect-src 'self';
-  base-uri 'self';
-  form-action 'self';
-  object-src 'none';
-  upgrade-insecure-requests;
-  ">
-
+  
     <!-- https://www.rizap.jp/program#program-point-01 -->
 
 
 
-  <title>aiProject</title>
+  <title>Test</title>
   <meta name="description" content="ライザップの模写コーディングです。練習用で作りました。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
@@ -32,6 +20,7 @@
 </head>
 
 <body>
+
   <div class="container">
     <header id="header">
       <div class="header">
@@ -48,11 +37,11 @@
             <nav>
               <ul class="navi">
                 <li><a class="open" href="index.html">AIを詳しく知る</a></li>
-                <li><a href="#">料金を見る</a></li>
-                <li><a href="#">プログラム</a></li>
-                <li><a class="serch" href="#">店舗案内</a></li>
-                <li class="contact"><a href="#">契約をお考えの方へ</a></li>
-                <li class="question"><a href="">よくある質問</a></li>
+                <li><a href="#">料金</a></li>
+                <li><a href="#">一連の流れ</a></li>
+                <li><a class="serch" href="#">店舗を探す</a></li>
+                <li class="contact"><a href="#">契約したい方へ</a></li>
+                <li class="question"><a href="">あるあるの疑問</a></li>
                 <li><a class="navi-contact" href="#">無料相談を受ける</a></li>
                 <li class="navi-box"></li>
               </ul>
@@ -96,29 +85,37 @@
     
     
     <main>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  
       <div class="navi-area navi2">
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+
         <nav>
-          <ul class="navi">
-            <li><a class="open" href="index.html">AIを詳しく知る</a></li>
-            <li><a href="#">料金を見る</a></li>
-            <li><a href="#">プログラム</a></li>
-            <li><a class="serch" href="#">店舗案内</a></li>
-            <li class="contact"><a href="#">契約をお考えの方へ</a></li>
-            <li class="question"><a href="">よくある質問</a></li>
-            <li><a class="navi-contact" href="#">無料相談を受ける</a></li>
-            <li class="navi-box"></li>
-          </ul>
+          <dl class="navi">
+            <dt class="menu">AIを詳しく知る</dt>
+            <dd><a href="./index.html">&nbsp;&nbsp;-契約</a></dd>
+            <dd><a href="./index.html">&nbsp;&nbsp;-AIの特徴</a></dd>
+            <dd><a href="./index.html">&nbsp;&nbsp;-特別な情報</a></dd>
+            <dd><a href="./index.html">&nbsp;&nbsp;-ソーシャルネット</a></dd>
+
+            <dt><a href="./index.html">料金</a></dt>
+            <dt><a href="./index.html">一連の流れ</a></dt>
+            <dt><a href="./index.html">店舗を探す</a></dt>
+
+            <dt class="menu">契約したい方へ</dt>
+            <dd><a href="./index.html">&nbsp;&nbsp;-お支払いと保証</a></dd>
+            <dd><a href="./index.html">&nbsp;&nbsp;-お申し込み方法</a></dd>
+
+            <dt><a href="./index.html">あるあるの疑問</a></dt>
+            <dt><a href="./index.html">無料相談を受ける</a></dt>
+          </dl>
         </nav>
       </div>
       <div class="ibox">
         <a class="ibox-contact" href="#">無料相談を受ける</a>
       </div>
-      
+
       <div class="modal mainvisual" >
         <picture>
           <source srcset="./img/main.png" media="(max-width: 1000px)">

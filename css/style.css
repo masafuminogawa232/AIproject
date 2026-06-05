@@ -45,6 +45,127 @@ h1 {
   background-color: #f2f2ff;
 }
 
+/* Hamburger */
+.hamburger {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hamburger span:nth-child(1) {
+  top: 16px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 25px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 34px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* Navigation */
+.navi-area.navi2 {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 1500;
+  overflow-y: auto;
+  /* padding-top: 50px; */
+}
+
+.navi-area.active {
+  right: 0;
+}
+
+.navi dt,
+.navi dd {
+  padding: 15px 20px;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.navi dt::after,
+.navi dd::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.navi .menu::after {
+  content: "∔";
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.navi dd {
+  display: none;
+}
+
+.navi dt a,
+.navi dd a {
+  text-decoration: none;
+  display: block;
+}
+
+.navi dt.menu.active::after {
+  content: "−";
+}
+
+.navi dt:last-child::after {
+  content: "";
+}
+
+.navi dt:last-child a {
+  color: #fff;
+}
+
+.navi dt:last-child {
+  margin-top: 5px;
+  background-color: #000;
+  text-align: center;
+}
+
 /*------------------------------
 header-top
 -------------------------------*/
@@ -56,7 +177,7 @@ header-top
   z-index: 1000;
 }
 
-.header-top {
+#header .header-top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,14 +192,14 @@ header-top
   align-items: center;
 }
 
-.navi-area .navi {
+#header .navi-area.navi1 .navi {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navi-area .navi li {
+#header .navi-area .navi li {
   padding: 0 20px;
   margin-top: -175px;
 }
@@ -139,7 +260,7 @@ header-top
   background-color: #fff;
 }
 
-.navi li {
+#header .navi li {
   width: auto;
   height: 120px;
   display: -webkit-box;
@@ -152,7 +273,7 @@ header-top
   align-items: center;
 }
 
-.navi .navi-box {
+#header .navi .navi-box {
   width: 250px;
   height: 120px;
 }
@@ -283,11 +404,11 @@ header-bottom
   height: 120px;
 }
 
-.navi-area .contact {
+#header .navi-area .contact {
   display: none;
 }
 
-.navi-area .question {
+#header .navi-area .question {
   display: none;
 }
 
@@ -349,7 +470,7 @@ mainvisual
 }
 
 /*------------------------------
-hamburger-menu
+feature
 ------------------------------*/
 .feature {
   width: 100%;
@@ -1648,6 +1769,9 @@ span.dbox {
     width: 90%;
     height: 50px;
     margin: 0 auto;
+  }
+  .navi2 {
+    display: block;
   }
   .hamburger {
     width: 50px;
