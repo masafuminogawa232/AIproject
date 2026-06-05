@@ -1679,6 +1679,7 @@ span.dbox {
   display: none;
 }
 
+
 @media screen and (max-width: 1000px) {
   /*------------------------------
   mainvisual
@@ -2016,6 +2017,7 @@ span.dbox {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
   .footer-logo {
     width: 100%;
     margin-bottom: 20px;
@@ -2037,29 +2039,36 @@ span.dbox {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
   .footer-logo img {
     width: 120px;
     height: auto;
     margin: 0 auto;
   }
+
   .footer-bottom {
     width: 100%;
     background-color: #000;
     padding: 20px 0;
   }
+
   .footer-text {
     color: #fff;
     font-size: 10px;
     margin: 10px 0;
   }
+
   .copyright {
     color: #fff;
     font-size: 8px;
     margin: 10px 0;
   }
+
   .line {
     padding: 0 10px 0;
   }
+
+
 }
 @media screen and (max-width: 767px) {
   /*------------------------------

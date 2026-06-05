@@ -52,32 +52,55 @@ $(function () {
 
   $(window).on('scroll', function() {
 
-    $('.scroll-active').each(function() {
+  $('.scroll-active').each(function() {
 
-      let elemTop = $(this).offset().top;      // 要素の位置
-      let scroll = $(window).scrollTop();      // スクロール量
-      let windowHeight = $(window).height();   // 画面の高さ
+    let elemTop = $(this).offset().top;
+    let scroll = $(window).scrollTop();
+    let windowHeight = $(window).height();
+    let w = $(window).width();
 
-      // ★ 画面に入ったら active を付ける
-      if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 200) {
-        function checkDevice() {
-        const w = $(window).width();
+    // ★ 画面に入ったら active を付ける
+    if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 200) {
 
-          if (w >= 1000) {
-            $(".header").addClass('active');
-            $(".box-hover").hide();
-            $(".ebox").hide();
-          }
-        }
-        checkDevice();
-      }else {
+      // 1000px以上 → 開閉する
+      if (w >= 1000) {
+        $(".header").addClass('active');
+        $(".box-hover").hide();
+        $(".ebox").hide();
+      }
+      
+      // 1000px以下 → 常に開いたまま
+      else {
+        $(".header").removeClass('active');
+        $(".box-hover").hide();
+        $(".ebox").hide();
+      }
+
+    } else {
+
+      // 1000px以上 → 閉じる
+      if (w >= 1000) {
         $(".header").removeClass('active');
         $(".ebox").show();
       }
 
-    });
+      // 1000px以下 → 常に開いたまま
+      else {
+        $(".header").removeClass('active');
+        $(".ebox").hide();
+      }
+
+    }
 
   });
+
+});
+
+
+
+
+
+
 
    
   
