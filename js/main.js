@@ -1,6 +1,8 @@
 $(function () {
 
-  // ハンバーガー開閉
+  // ==========================================
+  // 1. ハンバーガーメニューの開閉
+  // ==========================================
   $(".hamburger").on("click", function () {
     $(this).toggleClass("active");
     $(".navi-area").toggleClass("active");
@@ -14,7 +16,6 @@ $(function () {
 
   // アコーディオン（dt.menu のみ）
   $(".navi dt.menu").on("click", function (e) {
-
     // a をクリックした場合は遷移させる
     if ($(e.target).is("a")) return;
 
@@ -24,15 +25,16 @@ $(function () {
   });
 
 
-  
- $(".open").mouseenter(function() {
+  // ==========================================
+  // 2. ヘッダー・メガメニューのホバー制御
+  // ==========================================
+  $(".open").mouseenter(function() {
     $(".box-hover").show();
     // $("body").css("overflow-y","hidden");
     $(".modal").addClass("active");
   });
 
   $(".header").mouseleave(function() {
-
     // ★ どれかに hover していたら閉じない
     if (
       $(".open:hover").length > 0 ||
@@ -50,75 +52,67 @@ $(function () {
   });
 
 
+  // ==========================================
+  // 3. スクロール時の処理（画面連動）
+  // ==========================================
   $(window).on('scroll', function() {
-
-  $('.scroll-active').each(function() {
-
-    let elemTop = $(this).offset().top;
-    let scroll = $(window).scrollTop();
-    let windowHeight = $(window).height();
-    let w = $(window).width();
-
-    // ★ 画面に入ったら active を付ける
-    if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 200) {
-
-      // 1000px以上 → 開閉する
-      if (w >= 1000) {
-        $(".header").addClass('active');
-        $(".navi-area.navi1").show();//
-        
-        $(".box-hover").hide();
-        $(".ebox").hide();
-      }
+    $('.scroll-active').each(function() {
+      let elemTop = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      let w = $(window).width();
       
-      // 1000px以下 → 常に開いたまま
-      else {
-        $(".header").removeClass('active');
-        $(".navi-area.navi1").hide();//
-
-        $(".box-hover").hide();
-        $(".ebox").hide();
+      // ★ 画面に入ったら active を付ける
+      if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 170) {
+        // 1000px以上 → 開閉する
+        if (w >= 1000) {
+          $(".header").addClass('active');
+          $(".navi-area.navi1").show();
+          $(".logo").show();
+          
+          $(".box-hover").hide();
+          $(".ebox").hide();
+        }
+        // 1000px以下 → 常に開いたまま
+        else {
+          $(".header").removeClass('active');
+          $(".navi-area.navi1").hide();
+          $(".logo").hide();
+          
+          $(".box-hover").hide();
+          $(".ebox").hide();
+        }
+      } else {
+        // 1000px以上 → 閉じる
+        if (w >= 1000) {
+          $(".header").removeClass('active');
+          $(".ebox").show();
+          $(".logo").show();
+          $(".navi-area.navi1").show();
+        }
+        // 1000px以下 → 常に開いたまま
+        else {
+          $(".header").removeClass('active');
+          $(".ebox").hide();
+          $(".logo").show();
+          $(".navi-area.navi1").show();
+        }
       }
-
-    } else {
-
-      // 1000px以上 → 閉じる
-      if (w >= 1000) {
-        $(".header").removeClass('active');
-        $(".ebox").show();
-      }
-
-      // 1000px以下 → 常に開いたまま
-      else {
-        $(".header").removeClass('active');
-        $(".ebox").hide();
-      }
-
-    }
-
+    });
   });
-
-});
-
-
-
-
-
-
-
-   
-  
-  // $(".circle-anim-2").hover(
+  // ==========================================
+  // 4. リストホバー時のSVG円アニメーション
+  // ==========================================
   $(".box-hover ul li").hover(
     function() {
       // hover in → 円を生成
       let circle = `
-      <svg class="circle-anim" width="30" height="30">
-      <circle cx="15" cy="15" r="14" fill="none" stroke="#ccc" stroke-width="1" />
+        <svg class="circle-anim" width="30" height="30">
+          <circle cx="15" cy="15" r="14" fill="none" stroke="#ccc" stroke-width="1" />
           <circle class="draw" cx="15" cy="15" r="14" fill="none" stroke="#000" stroke-width="2"
           stroke-dasharray="88" stroke-dashoffset="88" />
         </svg>
-        `;
+      `;
 
       $(this).find(".ja").append(circle);
 
@@ -131,7 +125,6 @@ $(function () {
         }
       );
     },
-    
     function() {
       // hover out → 逆回転で消す
       let draw = $(this).find(".draw");
@@ -149,22 +142,30 @@ $(function () {
     }
   );
 
+
+  // ==========================================
+  // 5. ページ内スムーススクロール
+  // ==========================================
   $('a[href^="#"]').click(function(e) {
     e.preventDefault();
     const target = $($(this).attr('href')).offset().top;
-    $('html, body').animate({ scrollTop: target }, 400); // ← 800msでゆっくり
-  });
-
-  $(function () {
-    $(".info dd").hide();
-    $(".info dt").click(function () {
-      $(this).next().slideToggle();
-      $(this).toggleClass("active")
-    });
+    $('html, body').animate({ scrollTop: target }, 400); // 400msで移動
   });
 
 
-  
+  // ==========================================
+  // 6. インフォメーションのアコーディオン
+  // ==========================================
+  $(".info dd").hide();
+  $(".info dt").click(function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+  });
+
+
+  // ==========================================
+  // 7. その他のホバー補助
+  // ==========================================
   $(".enrollment").hover(
     function() {
       $(this).addClass("hover-on");
@@ -174,5 +175,4 @@ $(function () {
     }
   );
 
-
-});
+}); // 全体の閉じ

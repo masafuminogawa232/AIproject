@@ -30,7 +30,7 @@ a {
   height: auto;
   margin: 0 auto;
   overflow: auto;
-  background-color: #f2f2ff;
+  background-color: #fff;
 }
 
 h1 {
@@ -353,6 +353,7 @@ header-middle
   height: 115px;
   margin-bottom: 50px;
   position: fixed;
+  // position: absolute;
   z-index: 1100;
 }
 
@@ -1575,7 +1576,8 @@ span.dbox {
 }
 
 .caution {
-  margin: 30px 0 60px;
+  margin: 30px 0 0;
+  padding-bottom: 60px;
   font-weight: 500;
 }
 
