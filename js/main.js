@@ -56,50 +56,48 @@ $(function () {
   // 3. スクロール時の処理（画面連動）
   // ==========================================
   $(window).on('scroll', function() {
-    $('.scroll-active').each(function() {
-      let elemTop = $(this).offset().top;
-      let scroll = $(window).scrollTop();
-      let windowHeight = $(window).height();
-      let w = $(window).width();
-      
-      // ★ 画面に入ったら active を付ける
-      if (!$(this).hasClass('active') && scroll > elemTop - windowHeight + 170) {
-        // 1000px以上 → 開閉する
-        if (w >= 1000) {
-          $(".header").addClass('active');
-          $(".navi-area.navi1").show();
-          $(".logo").show();
-          
-          $(".box-hover").hide();
-          $(".ebox").hide();
-        }
-        // 1000px以下 → 常に開いたまま
-        else {
-          $(".header").removeClass('active');
-          $(".navi-area.navi1").hide();
-          $(".logo").hide();
-          
-          $(".box-hover").hide();
-          $(".ebox").hide();
-        }
-      } else {
-        // 1000px以上 → 閉じる
-        if (w >= 1000) {
-          $(".header").removeClass('active');
-          $(".ebox").show();
-          $(".logo").show();
-          $(".navi-area.navi1").show();
-        }
-        // 1000px以下 → 常に開いたまま
-        else {
-          $(".header").removeClass('active');
-          $(".ebox").hide();
-          $(".logo").show();
-          $(".navi-area.navi1").show();
-        }
-      }
-    });
-  });
+  let scroll = $(window).scrollTop(); // 現在のスクロール量
+  let w = $(window).width();          // 画面の横幅
+  
+  // ★ 特定の要素ではなく、純粋に「120px以上スクロールしたか」で判定
+  if (scroll > 120) {
+    
+    // 1000px以上 → 開閉する
+    if (w >= 1000) {
+      $(".header").addClass('active');
+      $(".navi-area.navi1").show();
+      $(".logo").show();
+      $(".box-hover").hide();
+      $(".ebox").hide();
+    }
+    // 1000px以下 → 常に開いたまま
+    else {
+      $(".header").removeClass('active');
+      $(".navi-area.navi1").hide();
+      $(".logo").hide();
+      $(".box-hover").hide();
+      $(".ebox").hide();
+    }
+    
+  } else {
+    // 120px未満のとき（ページの上部にいるとき）
+    // 1000px以上 → 閉じる
+    if (w >= 1000) {
+      $(".header").removeClass('active');
+      $(".ebox").show();
+      $(".logo").show();
+      $(".navi-area.navi1").show();
+    }
+    // 1000px以下
+    else {
+      $(".header").removeClass('active');
+      $(".ebox").hide();
+      $(".logo").show();
+      $(".navi-area.navi1").show();
+    }
+  }
+});
+
   // ==========================================
   // 4. リストホバー時のSVG円アニメーション
   // ==========================================
