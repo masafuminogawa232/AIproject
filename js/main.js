@@ -65,6 +65,8 @@ $(function () {
       // 1000px以上 → 開閉する
       if (w >= 1000) {
         $(".header").addClass('active');
+        $(".navi-area.navi1").show();//
+        
         $(".box-hover").hide();
         $(".ebox").hide();
       }
@@ -72,6 +74,8 @@ $(function () {
       // 1000px以下 → 常に開いたまま
       else {
         $(".header").removeClass('active');
+        $(".navi-area.navi1").hide();//
+
         $(".box-hover").hide();
         $(".ebox").hide();
       }
