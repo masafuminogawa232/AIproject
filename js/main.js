@@ -66,7 +66,8 @@ $(function () {
     if (w >= 1000) {
       $(".header").addClass('active');
       $(".navi-area.navi1").show();
-      $(".logo").show();
+      // $(".logo").show();
+      $(".ailogo").removeClass('is-hidden');
       $(".box-hover").hide();
       $(".ebox").hide();
     }
@@ -74,7 +75,8 @@ $(function () {
     else {
       $(".header").removeClass('active');
       $(".navi-area.navi1").hide();
-      $(".logo").hide();
+      // $(".logo").hide();
+      $(".ailogo").addClass('is-hidden');
       $(".box-hover").hide();
       $(".ebox").hide();
     }
@@ -85,14 +87,16 @@ $(function () {
     if (w >= 1000) {
       $(".header").removeClass('active');
       $(".ebox").show();
-      $(".logo").show();
+      // $(".logo").show();
+      $(".ailogo").removeClass('is-hidden');
       $(".navi-area.navi1").show();
     }
     // 1000px以下
     else {
       $(".header").removeClass('active');
       $(".ebox").hide();
-      $(".logo").show();
+      // $(".logo").show();
+      $(".ailogo").removeClass('is-hidden');
       $(".navi-area.navi1").show();
     }
   }
