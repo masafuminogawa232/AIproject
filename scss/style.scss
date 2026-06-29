@@ -1326,8 +1326,8 @@ span.dbox {
 
 .kbox ul li .span-3::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   border: solid 1px #000;
   border-radius: 50%;
@@ -1337,8 +1337,8 @@ span.dbox {
 
 .kbox ul li .span-4::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   border: solid 1px #000;
   border-radius: 50%;
@@ -1348,8 +1348,8 @@ span.dbox {
 
 .kbox ul li .span-5::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   border: solid 1px #000;
   border-radius: 50%;
@@ -2625,16 +2625,36 @@ span.dbox {
   .kbox ul li .span-3::before {
     left: 8.5%;
     top: 40px;
+    width: 23px;
+    height: 23px;
   }
   
   .kbox ul li .span-4::before {
     left: 8.5%;
     top: 72px;
+    width: 23px;
+    height: 23px;
   }
   
   .kbox ul li .span-5::before {
     left: 8.5%;
     top: 104px;
+    width: 23px;
+    height: 23px;
   }
 
+  .kbox ul li .obox {
+    font-size: 12px;;
+  }
+
+  .kbox span:first-child {
+    margin-left: 10px;
+  }
+
+  .detail ul li::before {
+    width: 25px;
+    height: 25px;
+    left: 22px;
+  }
+  
 }
