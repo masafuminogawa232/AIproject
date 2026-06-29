@@ -2605,3 +2605,21 @@ span.dbox {
     background-color: #f2f2ff;
   }
 }
+@media screen and (max-width: 500px) {
+  .flex-text.bbox img {
+    left: 71%;
+  }
+  .detail-text ul li {
+    font-size: 12px;
+  }
+  .info dt,
+  .info dd {
+    font-size: 10px;
+  }
+  .watch-btn a {
+    width: 90%;
+  }
+  .inner-white .btn-2 {
+    width: 90%;
+  }
+}
