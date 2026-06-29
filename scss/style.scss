@@ -111,7 +111,7 @@ h1 {
 }
 
 .navi .menu::after {
-  content: "∔";
+  content: "+";
   position: absolute;
   top: 50%;
   right: 10%;
@@ -2587,7 +2587,14 @@ span.dbox {
   .consul {
     background-color: #f2f2ff;
   }
-
+  
+  .watch-btn a {
+    width: 90%;
+  }
+  
+  .inner-white .btn-2 {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -2602,12 +2609,12 @@ span.dbox {
   .info dd {
     font-size: 10px;
   }
-  
-  .watch-btn a {
-    width: 90%;
+
+  .detail-3 .span-1::after {
+    left: 121px;
   }
-  
-  .inner-white .btn-2 {
-    width: 90%;
+
+  .detail-3 .span-2::after {
+    left: 143px;
   }
 }
