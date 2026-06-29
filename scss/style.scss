@@ -2611,10 +2611,30 @@ span.dbox {
   }
 
   .detail-3 .span-1::after {
-    left: 124px;
+    left: 127px;
   }
 
   .detail-3 .span-2::after {
-    left: 146px;
+    left: 149px;
   }
+
+  .kbox span {
+    margin-left: 10px;
+  }
+
+  .kbox ul li .span-3::before {
+    left: 8.5%;
+    top: 40px;
+  }
+  
+  .kbox ul li .span-4::before {
+    left: 8.5%;
+    top: 72px;
+  }
+  
+  .kbox ul li .span-5::before {
+    left: 8.5%;
+    top: 104px;
+  }
+
 }
