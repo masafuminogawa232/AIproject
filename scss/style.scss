@@ -2644,7 +2644,7 @@ span.dbox {
   }
 
   .kbox ul li .obox {
-    font-size: 12px;;
+    font-size: 12px;
   }
 
   .kbox span:first-child {
@@ -2657,4 +2657,7 @@ span.dbox {
     left: 22px;
   }
 
+  .container {
+    overflow: hidden;
+  }
 }

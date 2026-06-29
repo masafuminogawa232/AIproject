@@ -2660,4 +2660,7 @@ span.dbox {
     height: 25px;
     left: 22px;
   }
+  .container {
+    overflow: hidden;
+  }
 }
