@@ -1745,6 +1745,14 @@ span.dbox {
   display: none;
 }
 
+.copyright-pc {
+  font-size: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
 @media screen and (max-width: 1000px) {
   /*------------------------------
   mainvisual
@@ -2118,6 +2126,9 @@ span.dbox {
     color: #fff;
     font-size: 8px;
     margin: 10px 0;
+  }
+  .copyright-pc {
+    display: none;
   }
   .line {
     padding: 0 10px 0;
